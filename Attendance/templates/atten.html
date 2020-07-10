@@ -1,0 +1,35 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="/static/style.css" type="text/css">
+<title>Untitled Document</title>
+</head>
+<body>
+	
+<h2>Attendence</h2>
+
+<form action="/hi" method = "POST">
+  Employee_ID:<br>
+  <input type="text" name="e_id" required>
+  <br>
+  Date:<br>
+  <input type="date" name="Date" required>
+  <br>
+  Punch_In:<br>
+  <input type="time" name="Punch_In" required>
+  <br>
+  Punch_Out:<br>
+  <input type="time" name="Punch_Out" required>
+  <br>
+ 
+
+  <br>
+  <input type="submit" value="Submit">
+</form> 
+
+<p>click the "Submit" button</p>
+{% include "include/_message.html "%}
+</body>
+</html>
